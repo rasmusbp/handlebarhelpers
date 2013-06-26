@@ -7,7 +7,7 @@
   * See https://github.com/rasmusbp/handlebarhelpers for documentation
   *
   * @param array {Array} data set to iterate through
-  * @param options {Object} Override the 'odd/even' classes or add a group
+  * @param options {Object} pass in a "group" or "prefix" option
   * 
   * @author Rasmus Bangsted Pedersen
   */
@@ -26,7 +26,7 @@
             groupClass      = prefix ? prefix + '-group' : 'group',
             firstGroupItem  = prefix ? prefix + '-first-group-item' : 'first-group-item',
             lastGroupItem   = prefix ? prefix + '-last-group-item' : 'last-group-item';
-      
+     
         for (var i = 0, j = array.length; i < j; i++) {
 
             var item = array[i];
