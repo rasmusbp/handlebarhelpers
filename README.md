@@ -11,30 +11,30 @@ Returns the following properties:
 Index position of iteration
 
 * **_child**
-- CSS helper classes indicating the position in list: 
+CSS helper classes indicating the position in list: 
 "odd", "even", "first-child" and "last-child".
 The odd/even classes can be overriden via the options.hash object.
          
 * **_group**
-- (optional) CSS helper classes that add the ability to divide the iteration into 
+(optional) CSS helper classes that add the ability to divide the iteration into 
 segments. Adds the following classes based on current position:
 group[n]", "first-group-item" and "last-group-item"
 
 * **_groupId**
-- (optional) Same as _group, but only containing the group ID.
+(optional) Same as _group, but only containing the group ID.
 
 * **_firstGroupItem**
-- (optional) Boolean indicating if the iteration is positioned on the first item 
+(optional) Boolean indicating if the iteration is positioned on the first item 
 within a group. Useful if you need to add conditional markup or CSS classes.
 
 * **_lastGroupItem**
-- (optional) Same principle as _firstGroupItem.
+(optional) Same principle as _firstGroupItem.
 
 
 ###Usage
 
 ####Data
-´´´js
+```js
 var items = [
     "Milk",
     "Egg",
@@ -43,10 +43,10 @@ var items = [
     "Fork",
     "Spoon"
 ];
-´´´
+```
 
 ####Template
-´´´html
+```html
 <ul>
     {{#every items group="3"}}
         <li class="{{_child}} {{_group}}">
@@ -59,10 +59,10 @@ var items = [
         {{/if}}
     {{/every}}
 </ul>
-´´
+```
 
 ####Output
-´´´html
+```html
 <ul>
     <li class="odd first-child group1 first-group-item">
         <p>Milk</p>
@@ -90,4 +90,4 @@ var items = [
          <a href="#">add all above items</a>
     </li>
 </ul>
-´´´
+```
