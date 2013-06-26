@@ -30,6 +30,12 @@ within a group. Useful if you need to add conditional markup or CSS classes.
 * **_lastGroupItem**
 (optional) Same principle as _firstGroupItem.
 
+You can pass in two types of options to the helper function:
+* **group**
+Let's you specify a segment within the dataset
+* **prefix**
+Let's you prefix all the CSS classes with a "namespace"
+
 
 ###Usage
 
@@ -48,7 +54,7 @@ var items = [
 ####Template
 ```html
 <ul>
-    {{#every items group="3"}}
+    {{#every items group="3" prefix="ns"}}
         <li class="{{_child}} {{_group}}">
             <p>{{.}}</p> 
         </li>
@@ -64,29 +70,29 @@ var items = [
 ####Output
 ```html
 <ul>
-    <li class="odd first-child group1 first-group-item">
+    <li class="ns-odd ns-first-child ns-group1 ns-first-group-item">
         <p>Milk</p>
     </li>
-    <li class="even group1">
+    <li class="ns-even ns-group1">
         <p>Egg</p>
     </li>
-    <li class="odd group1 last-group-item">
+    <li class="ns-odd ns-group1 ns-last-group-item">
         <p>Butter</p>
     </li>
-    <li data-group="group1" class="even add-all">
+    <li data-group="ns-group1" class="ns-even add-all">
          <a href="#">add all above items</a>
     </li>
     
-    <li class="odd group2 first-group-item">
+    <li class="ns-odd ns-group2 ns-first-group-item">
         <p>Knife</p>
     </li>
-    <li class="even group2">
+    <li class="ns-even ns-group2">
         <p>Fork</p>
     </li>
-    <li class="odd group2 last-group-item">
+    <li class="ns-odd ns-group2 ns-last-group-item">
         <p>Spoon</p>
     </li>
-    <li data-group="group2" class="even last-child add-all">
+    <li data-group="ns-group2" class="ns-even ns-last-child add-all">
          <a href="#">add all above items</a>
     </li>
 </ul>
