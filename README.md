@@ -23,7 +23,7 @@ segments. Adds the following classes based on current position:
 group[n]", "first-group-item" and "last-group-item"
 
 * **_groupId**
-Same as _group, but only containing the group ID.
+Same as _group, but containing only the group ID.
 
 * **_firstGroupItem**
 Boolean indicating if the iteration is positioned on the first item 
