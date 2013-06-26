@@ -14,7 +14,6 @@ Index position of iteration
 * **_child**
 CSS helper classes indicating the position in list: 
 "odd", "even", "first-child" and "last-child".
-The odd/even classes can be overriden via the options.hash object.
 
 And if a "group" is passed to the helper, these properties will be returned as well:
       
