@@ -11,7 +11,6 @@
   * 
   * @author Rasmus Bangsted Pedersen
   */
- (function () {
  Handlebars.registerHelper('every', function(array, options, elseFn) {
 
     if (array && array.length > 0) {
@@ -88,4 +87,3 @@
         return false;
     }
 });
-})();
