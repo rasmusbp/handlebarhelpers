@@ -26,10 +26,19 @@
             groupClass      = prefix ? prefix + '-group' : 'group',
             firstGroupItem  = prefix ? prefix + '-first-group-item' : 'first-group-item',
             lastGroupItem   = prefix ? prefix + '-last-group-item' : 'last-group-item';
-
+      
         for (var i = 0, j = array.length; i < j; i++) {
 
             var item = array[i];
+
+            // Prepare data object (by doing this the helper can support and array of strings and/or objects)
+            if ( typeof item !== 'object' ) {
+              var data = item;
+              item = {};
+              item.data = data;
+            } else {
+              item.data = item;
+            }
 
             // Add child indicators
             if ( i === 0 ) {
@@ -81,6 +90,10 @@
             buffer += options.fn(item);
 
         }
+
+        // delete temp currentGroup property
+        delete this.currentGroup;
+
         // return the finished buffer 
         return buffer;
     } else {

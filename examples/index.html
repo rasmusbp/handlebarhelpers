@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Handlerbars Helpers | DEMO</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="js/jquery.1.10-min.js"></script>
+	<script src="js/handlebars-1.0.js"></script>
+
+	<!-- load helpers -->
+	<script src="../_every.js"></script>
+	<script src="../_log.js"></script>
+
+	<script src="js/main.js"></script>
+
+	<!-- templates-->
+	<script type="text/template" id="everyTpl">
+		<ul>
+		    {{#every items group="3" prefix="ns"}}
+		        <li class="{{_child}} {{_group}}">
+		            <p>{{data}}</p> 
+		        </li>
+		        {{#if _lastGroupItem}}
+		        <li data-group="{{_groupId}}" class="add-all">
+		             <a href="#">add all above items</a>
+		        </li>
+		        {{/if}}
+		    {{/every}}
+		</ul>
+	</script>
+	<script type="text/template" id="logTpl">
+		{{log .}}
+		<p>Look in the console to see the output of this helper</p>
+	</script>
+	
+
+</head>
+<body>
+	
+	<h2>Helper: every (_every.js)</h2>
+	<div class="demo every-target">
+
+	</div>
+
+	<h2>Helper: log (_log.js)</h2>
+	<div class="demo log-target">
+
+	</div>
+
+</body>
+</html>

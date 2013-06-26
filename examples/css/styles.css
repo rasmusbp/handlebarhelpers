@@ -1,0 +1,33 @@
+body {
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 85%;
+}
+h2 {
+	border-top: 1px solid #666;
+	padding: 5px 0;
+	margin: 30px 0 5px 0;
+}
+ul {
+	width: 200px;
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	margin: 0;
+	padding: 3px 10px;
+	list-style: none;
+}
+li.ns-odd {
+	background: #eee;
+}
+li.ns-even {
+	background: #ccc;
+}
+li.add-all {
+	padding: 3px;
+	margin-bottom: 5px;
+	background: green;
+}
+li.add-all a {
+	color: #fff;
+}
