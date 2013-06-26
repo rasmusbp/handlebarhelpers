@@ -1,7 +1,7 @@
 #Handlebars helpers
 A collection of useful helpers
 
-##_every
+##_every.js
 
 Iteration helper
 Iterates through an array and adds CSS helper classes and index indicator
