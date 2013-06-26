@@ -84,7 +84,7 @@
             }
 
             // Add index indicator
-            item.index = i;
+            item._index = i;
 
             // Add to buffer
             buffer += options.fn(item);
