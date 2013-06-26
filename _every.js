@@ -26,7 +26,7 @@
             groupClass      = prefix ? prefix + '-group' : 'group',
             firstGroupItem  = prefix ? prefix + '-first-group-item' : 'first-group-item',
             lastGroupItem   = prefix ? prefix + '-last-group-item' : 'last-group-item';
-     
+   
         for (var i = 0, j = array.length; i < j; i++) {
 
             var item = array[i];
