@@ -17,6 +17,7 @@ The helper always returns the following properties along with original data:
 
 * **_index**
 Index position of iteration
+
 * **_child**
 CSS helper classes indicating the position in list: 
 "odd", "even", "first-child" and "last-child".
@@ -27,11 +28,14 @@ And if a "group" option is passed to the helper, these properties will be return
 CSS helper classes that adds the ability to divide output into 
 segments. Adds the following classes based on current position:
 group[n]", "first-group-item" and "last-group-item"
+
 * **_groupId**
 Same as _group, but containing only the group ID.
+
 * **_firstGroupItem**
 Boolean indicating if the iteration is positioned on the first item 
 within a group. Useful if you need to add conditional markup or CSS classes.
+
 * **_lastGroupItem**
 Same principle as _firstGroupItem.
 
