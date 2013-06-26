@@ -7,7 +7,7 @@
   * See https://github.com/rasmusbp/handlebarhelpers for documentation
   *
   * @param array {Array} data set to iterate through
-  * @param options {Object} Override the 'odd/even' classes or add a group
+  * @param options {Object} pass in a "group" or "prefix" option
   * 
   * @author Rasmus Bangsted Pedersen
   */
