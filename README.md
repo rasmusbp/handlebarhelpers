@@ -5,7 +5,7 @@ A collection of useful helpers
 
 Iteration helper
 Iterates through an array and adds CSS helper classes and index indicator
-Returns the following properties along with original data:
+The helper alway the following properties along with original data:
 
 * **_index**
 Index position of iteration
@@ -14,23 +14,25 @@ Index position of iteration
 CSS helper classes indicating the position in list: 
 "odd", "even", "first-child" and "last-child".
 The odd/even classes can be overriden via the options.hash object.
-         
+
+And if a "group" is passed to the helper, these properties will be returned as well:
+      
 * **_group**
-(optional) CSS helper classes that add the ability to divide the iteration into 
+ CSS helper classes that add the ability to divide the iteration into 
 segments. Adds the following classes based on current position:
 group[n]", "first-group-item" and "last-group-item"
 
 * **_groupId**
-(optional) Same as _group, but only containing the group ID.
+Same as _group, but only containing the group ID.
 
 * **_firstGroupItem**
-(optional) Boolean indicating if the iteration is positioned on the first item 
+Boolean indicating if the iteration is positioned on the first item 
 within a group. Useful if you need to add conditional markup or CSS classes.
 
 * **_lastGroupItem**
-(optional) Same principle as _firstGroupItem.
+Same principle as _firstGroupItem.
 
-You can pass in two types of options to the helper function:
+You can pass in two optional options to the helper function:
 * **group**
 Let's you specify a segment within the dataset
 * **prefix**
