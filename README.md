@@ -1,4 +1,4 @@
-#HANDLEBARS HELPERS
+#Handlebars helpers
 A collection of useful helpers
 
 ##_every
