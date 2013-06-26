@@ -6,6 +6,13 @@ A collection of useful helpers
 Iteration helper
 Iterates through an array and adds CSS helper classes and index indicator
 
+
+You can pass in two optional options to the helper function:
+* **group**
+Let's you specify a segment within the dataset
+* **prefix**
+Let's you prefix all the CSS classes with a "namespace". Use this to avoid style conflicts.
+
 The helper always returns the following properties along with original data:
 
 * **_index**
@@ -15,10 +22,10 @@ Index position of iteration
 CSS helper classes indicating the position in list: 
 "odd", "even", "first-child" and "last-child".
 
-And if a "group" is passed to the helper, these properties will be returned as well:
+And if a "group" option is passed to the helper, these properties will be returned as well:
       
 * **_group**
- CSS helper classes that add the ability to divide the iteration into 
+CSS helper classes that adds the ability to divide output into 
 segments. Adds the following classes based on current position:
 group[n]", "first-group-item" and "last-group-item"
 
@@ -31,13 +38,6 @@ within a group. Useful if you need to add conditional markup or CSS classes.
 
 * **_lastGroupItem**
 Same principle as _firstGroupItem.
-
-You can pass in two optional options to the helper function:
-* **group**
-Let's you specify a segment within the dataset
-* **prefix**
-Let's you prefix all the CSS classes with a "namespace"
-
 
 ###Usage
 
