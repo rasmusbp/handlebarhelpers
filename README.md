@@ -91,10 +91,10 @@ var items = [
     <li class="ns-even ns-group2">
         <p>Fork</p>
     </li>
-    <li class="ns-odd ns-group2 ns-last-group-item">
+    <li class="ns-odd ns-last-child ns-group2 ns-last-group-item">
         <p>Spoon</p>
     </li>
-    <li data-group="ns-group2" class="ns-even ns-last-child add-all">
+    <li data-group="ns-group2" class="add-all">
          <a href="#">add all above items</a>
     </li>
 </ul>
