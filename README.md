@@ -3,7 +3,6 @@ A collection of useful helpers
 
 ##_every.js
 
-Iteration helper
 Iterates through an array and adds CSS helper classes and index indicator
 
 
@@ -56,7 +55,7 @@ var items = [
 ####Template
 ```html
 <ul>
-    {{#every items group="3" prefix="ns"}}
+    {{#every . group="3" prefix="ns"}}
         <li class="{{_child}} {{_group}}">
             <p>{{.}}</p> 
         </li>
