@@ -5,7 +5,7 @@ A collection of useful helpers
 
 Iteration helper
 Iterates through an array and adds CSS helper classes and index indicator
-Returns the following properties:
+Returns the following properties along with original data:
 
 * **_index**
 Index position of iteration
