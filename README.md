@@ -53,7 +53,7 @@ var items = [
             <p>{{.}}</p> 
         </li>
         {{#if _lastGroupItem}}
-        <li class="{{_child}} {{_groupId}} add-all">
+        <li data-group="{{_groupId}}" class="{{_child}} add-all">
              <a href="#">add all above items</a>
         </li>
         {{/if}}
@@ -73,7 +73,7 @@ var items = [
     <li class="odd group1 last-group-item">
         <p>Butter</p>
     </li>
-    <li class="even group1 add-all">
+    <li data-group="group1" class="even add-all">
          <a href="#">add all above items</a>
     </li>
     
@@ -86,7 +86,7 @@ var items = [
     <li class="odd group2 last-group-item">
         <p>Spoon</p>
     </li>
-    <li class="even group2 last-child add-all">
+    <li data-group="group2" class="even last-child add-all">
          <a href="#">add all above items</a>
     </li>
 </ul>
