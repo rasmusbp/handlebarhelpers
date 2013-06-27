@@ -1,5 +1,5 @@
 /**
- * **** WHATIF ****
+ * **** ONLYIF ****
  * ================= 
  * 
  * A more "advanced" IF block helper.
@@ -13,10 +13,10 @@
  *
  * @author Rasmus Bangsted Pedersen
  */
-Handlebars.registerHelper('whatif', function(x, y, options) {
+Handlebars.registerHelper('onlyif', function(x, y, options) {
 
 	if (arguments.length < 3)
-		throw new Error("Handlerbars Helper 'whatif' needs 2 parameters");
+		throw new Error("Handlerbars Helper 'onlyif' needs 2 parameters");
 
 	var operator = options.hash.operator || "===";
 
@@ -47,7 +47,7 @@ Handlebars.registerHelper('whatif', function(x, y, options) {
 	};
 
 	if (!operators[operator])
-		throw new Error("Handlerbars Helper 'whatif' doesn't know the operator "+operator);
+		throw new Error("Handlerbars Helper 'onlyif' doesn't know the operator "+operator);
 
 	var result = operators[operator](x,y);
 
