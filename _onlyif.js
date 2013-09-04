@@ -29,6 +29,8 @@ Handlebars.registerHelper('onlyif', function(x, y, options) {
 		'<='		:	function(x,y) { return x <= y; },
 		'>='		:	function(x,y) { return x >= y; },
 		'typeof'	:	function(x,y) { return typeof x == y; },
+		
+		// Compare two lists
 		'x-longest'	:	function(x,y) {
 							if (x.length && y.length) {
 								return x.length > y.length;
