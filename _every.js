@@ -18,6 +18,7 @@
         var buffer  = '',
             group   = options.hash.group ? parseFloat(options.hash.group, 10) : false,
             prefix  = options.hash.prefix || false,
+            offset  = options.hash.offset || 0,
             // class names:
             odd             = prefix ? prefix + '-odd' : 'odd',
             even            = prefix ? prefix + '-even' : 'even',
@@ -83,8 +84,10 @@
                 }
             }
 
-            // Add index indicator
+            // Add index indicators
             item._index = i;
+            item._number = i+1;
+            item._total = array.length;
 
             // Add to buffer
             buffer += options.fn(item);

@@ -15,7 +15,13 @@ Let's you prefix all the CSS classes with a "namespace". Use this to avoid style
 The helper always returns the following properties along with original data:
 
 * **_index**
-Index position of iteration
+Index position of iteration. (zero indexed)
+
+* **_number**
+Current nummber in iteration. (not zero indexed)
+
+* **_total**
+Total length of array. Useful for rendering e.g. amount indicators, like: "3 out of 11".
 
 * **_child**
 CSS helper classes indicating the position in list: 
